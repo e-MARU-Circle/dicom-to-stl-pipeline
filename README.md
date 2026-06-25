@@ -43,6 +43,13 @@ CBCT/CT の DICOM フォルダを渡すと、3Dプリントや設計に使える
 セットアップ手順は環境別に用意しています → [references/environment_setup.md](references/environment_setup.md)
 （macOS の MPS/CPU、Windows の CUDA、汎用CPU）。
 
+## 入手
+
+```bash
+git clone https://github.com/e-MARU-Circle/dicom-to-stl-pipeline.git
+cd dicom-to-stl-pipeline
+```
+
 ## クイックスタート
 
 ```bash
