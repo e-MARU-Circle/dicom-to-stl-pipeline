@@ -1,0 +1,21 @@
+# dicom-to-stl-pipeline ランタイム依存（パイプライン部分のみ）
+#
+# PyTorch / nnunetv2 はプラットフォーム依存のためここには固定せず、
+# references/environment_setup.md の手順で各自インストールすること。
+# （Mac: MPS/CPU ホイール、Windows: CUDA ホイール）
+#
+# 以下はパイプラインの後段（NIfTI→STL）と匿名化・PHIガードに必要な共通依存。
+
+SimpleITK>=2.3
+scikit-image>=0.22
+vtk>=9.2
+numpy>=1.24
+pydicom>=2.4
+
+# 別途インストールが必要（pip 不可）:
+#   dcm2niix … DICOM→NIfTI 変換バイナリ
+#     macOS:   brew install dcm2niix
+#     Windows: https://github.com/rordenlab/dcm2niix/releases から取得し PATH に追加
+#
+# AI 推論に必要（environment_setup.md 参照、ここでは固定しない）:
+#   torch, nnunetv2

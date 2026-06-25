@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# 学習モデル・患者データ・中間生成物は絶対にコミットしない
+nnUNet_results/
+*.pth
+*.zip
+*_DICOM/
+*_ANON/
+*.dcm
+*.nii
+*.nii.gz
+*.stl
+
+# OS
+.DS_Store
